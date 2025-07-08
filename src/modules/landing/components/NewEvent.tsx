@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 import Container from "../../../components/Container"
 import { LuArrowUpRight, LuCalendarCheck2, LuCircleArrowRight } from "react-icons/lu"
-import SampleImg from '../../../assets/images/tu-magway.jpg'
 import { newsEventsTypes } from "../../../types/landingPageTypes"
 import ErrorPage from "../../../components/ErrorPage"
 import SectionLoading from "../../../components/SectionLoading"
