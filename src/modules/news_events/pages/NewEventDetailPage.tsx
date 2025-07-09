@@ -12,6 +12,8 @@ const NewEventDetailPage = () => {
   const { id } = useParams();
   const new_event_id = id?.split("-")[0];
 
+  console.log(id)
+
   const { data, error, isLoading } = useSWR(
     import.meta.env.VITE_API_URL + "news-events/" + new_event_id,
     fetcher
