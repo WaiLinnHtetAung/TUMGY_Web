@@ -10,9 +10,9 @@ const DepartmentPage = () => {
   return (
     <div className='pb-20'>
         {department == 'civil' && <CivilDepartment />}
-        {department == 'electronic-communication' && <ElectronicDepartment />}
+        {department == 'electronic' && <ElectronicDepartment />}
         {department == 'electrical-power' && <ElectricalDepartment />}
-        {department == 'mechanical-power' && <MechnicalDepartment />}
+        {department == 'mechanical-engineering' && <MechnicalDepartment />}
     </div>
   )
 }

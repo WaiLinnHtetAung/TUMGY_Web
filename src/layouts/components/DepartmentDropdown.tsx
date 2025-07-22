@@ -12,14 +12,14 @@ const DepartmentDropdown = ({sub_route_name}: {sub_route_name: string}) => {
       <li className={`font-semibold text-sm px-3 py-1 rounded text-slate-700 hover:bg-green-800 hover:text-white ${sub_route_name === 'civil' && 'bg-green-800 text-white'}`} onClick={() => handleClick('/departments/civil')}>
         Civil Engineering
       </li>
-      <li className={`font-semibold text-sm px-3 py-1 rounded text-slate-700 hover:bg-green-800 hover:text-white ${sub_route_name === 'electronic-communication' && 'bg-green-800 text-white'}`} onClick={() => handleClick('/departments/electronic-communication')}>
-        Electronic Communication
+      <li className={`font-semibold text-sm px-3 py-1 rounded text-slate-700 hover:bg-green-800 hover:text-white ${sub_route_name === 'electronic' && 'bg-green-800 text-white'}`} onClick={() => handleClick('/departments/electronic')}>
+        Electronic Engineering
       </li>
       <li className={`font-semibold text-sm px-3 py-1 rounded text-slate-700 hover:bg-green-800 hover:text-white ${sub_route_name === 'electrical-power' && 'bg-green-800 text-white'}`} onClick={() => handleClick('/departments/electrical-power')}>
         Electrical Power 
       </li>
-      <li className={`font-semibold text-sm px-3 py-1 rounded text-slate-700 hover:bg-green-800 hover:text-white ${sub_route_name === 'mechanical-power' && 'bg-green-800 text-white'}`} onClick={() => handleClick('/departments/mechanical-power')}>
-        Mechanical Power 
+      <li className={`font-semibold text-sm px-3 py-1 rounded text-slate-700 hover:bg-green-800 hover:text-white ${sub_route_name === 'mechanical-engineering' && 'bg-green-800 text-white'}`} onClick={() => handleClick('/departments/mechanical-engineering')}>
+        Mechanical Engineering 
       </li>
     </ul>
   );

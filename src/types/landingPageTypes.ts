@@ -9,3 +9,9 @@ export type newsEventsTypes = {
     error: string | boolean,
     isLoading: string | boolean
 }
+
+export type rectorMessageTypes = {
+    rector_message: any,
+    error: string | boolean,
+    isLoading: string | boolean
+}

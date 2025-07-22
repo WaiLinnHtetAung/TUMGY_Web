@@ -12,13 +12,14 @@ const HomePage = () => {
   const {data: sliders, error: slider_error, isLoading: slider_isLoading} = useSWR(import.meta.env.VITE_API_URL + 'image-sliders' , fetcher);
   const {data: announcements, error: announcement_error, isLoading: announcement_isLoading} = useSWR(import.meta.env.VITE_API_URL + 'announcements?count=3' , fetcher);
   const {data: news_events, error: news_events_error, isLoading: news_events_isLoading} = useSWR(import.meta.env.VITE_API_URL + 'news-events?count=3' , fetcher);
+  const {data: rector_message, error: rector_message_error, isLoading: rector_message_isLoading} = useSWR(import.meta.env.VITE_API_URL + 'rector-messages' , fetcher);
 
   return (
     <div className='pb-20'>
         <Carousel sliders={sliders} error={slider_error} isLoading={slider_isLoading} />
         <AboutUni />
         <Statistic />
-        <RectorMessage />
+        <RectorMessage rector_message={rector_message} error={rector_message_error} isLoading={rector_message_isLoading} />
         <UniBanner />
         <NewEvent news_events={news_events} error={news_events_error} isLoading={news_events_isLoading} />
         <Announcement announcements={announcements} error={announcement_error} isLoading={announcement_isLoading} />

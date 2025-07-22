@@ -9,6 +9,7 @@ import NewEventPage from "../modules/news_events/pages/NewEventPage";
 import NewEventDetailPage from "../modules/news_events/pages/NewEventDetailPage";
 import ThesisPage from "../modules/thesis/pages/ThesisPage";
 import ActivityPage from "../modules/activities/pages/ActivityPage";
+import ActivityDetailPage from "../modules/activities/pages/ActivityDetailPage"
 import AboutUsPage from "../modules/about_us/pages/AboutUsPage";
 import ContactUsPage from "../modules/contact_us/pages/ContactUsPage";
 
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
             {
                 path: '/our-activities',
                 element: <ActivityPage />
+            },
+            {
+                path: '/our-activities/:id',
+                element: <ActivityDetailPage />
             },
             {
                 path: '/about-us',
