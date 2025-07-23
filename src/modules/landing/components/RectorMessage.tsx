@@ -1,5 +1,4 @@
 import React from 'react'
-import Rector from '../../../assets/images/rector.jpeg'
 import Container from '../../../components/Container'
 import { rectorMessageTypes } from '../../../types/landingPageTypes'
 import ErrorPage from '../../../components/ErrorPage'
