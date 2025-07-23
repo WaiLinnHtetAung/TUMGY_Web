@@ -5,7 +5,6 @@ import Swal from 'sweetalert2'
 import { submitMail } from "../../../services/mailService";
 import { dotSpinner } from 'ldrs'
 
-
 const ContactUsPage = () => {
   dotSpinner.register()
 
