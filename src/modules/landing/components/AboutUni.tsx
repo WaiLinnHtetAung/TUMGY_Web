@@ -48,7 +48,7 @@ const AboutUni = () => {
                 <h3 className="text-lg font-bold text-rose-700">knowledge meets innovation</h3>
             </div>
 
-            <h1 className="text-4xl font-bold mt-4">About University</h1>
+            <h1 className="text-4xl font-bold mt-4">About TU MGY</h1>
             <p className="mt-5 font-poppins text-justify indent-10 ">
                 Founded in 2007, Technological University, Magway is a non-profit public higher education institution located in the small city of Magway (population range of 50,000-249,999 inhabitants). Officially recognized by the Ministry of Science and Technology of Myanmar, Technological University, Magway (TU Magway) is a coeducational Burmese higher education institution. 
             </p>
