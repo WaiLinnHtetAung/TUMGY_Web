@@ -1,6 +1,6 @@
 import EPBanner from '../../../assets/images/departments/ep_banner.jpg'
 import Container from '../../../components/Container';
-import EPLogo from '../../../assets/images/departments/ep_logo.jpg'
+import EPLogo from '../../../assets/images/departments/ep_logo.png'
 import Tower from '../../../assets/images/departments/tower.jpg'
 import { HiAcademicCap } from 'react-icons/hi';
 import ResearchBanner from '../../../assets/images/departments/ep_research_banner.webp'
@@ -43,13 +43,13 @@ const ElectricalDepartment = () => {
                             </div>
                             <h4>Bachelor of Engineering (Electrical Power)</h4>
                         </div>
-                        <div className="col-span-1 border border-green-500 shadow-lg p-3 rounded-xl bg-slate-100">
+                        {/* <div className="col-span-1 border border-green-500 shadow-lg p-3 rounded-xl bg-slate-100">
                             <div className="flex items-center gap-2">
                                 <HiAcademicCap size={30} />
                                 <h2 className='text-lg font-bold'>ME (Electrical Power)</h2>
                             </div>
                             <h4>Master of Engineering (Electrical Power)</h4>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

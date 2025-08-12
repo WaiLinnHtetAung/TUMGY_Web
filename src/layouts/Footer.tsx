@@ -54,19 +54,19 @@ const Footer = () => {
                 <Link to='/'>Home</Link>
               </li>
               <li className='text-white underline underline-offset-2 hover:text-primary mb-2'>
-                <Link to='/'>Announcements</Link>
+                <Link to='/announcements'>Announcements</Link>
               </li>
               <li className='text-white underline underline-offset-2 hover:text-primary mb-2'>
-                <Link to='/'>News & Events</Link>
+                <Link to='/news-events'>News & Events</Link>
               </li>
               <li className='text-white underline underline-offset-2 hover:text-primary mb-2'>
-                <Link to='/'>Our Activities</Link>
+                <Link to='/our-activities'>Our Activities</Link>
               </li>
               <li className='text-white underline underline-offset-2 hover:text-primary mb-2'>
-                <Link to='/'>About Us</Link>
+                <Link to='/about-us'>About Us</Link>
               </li>
               <li className='text-white underline underline-offset-2 hover:text-primary mb-2'>
-                <Link to='/'>Contact Us</Link>
+                <Link to='/contact-us'>Contact Us</Link>
               </li>
             </ul>
           </div>

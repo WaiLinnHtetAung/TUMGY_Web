@@ -1,6 +1,6 @@
 import MPBanner from '../../../assets/images/departments/mp_banner.jpg'
 import Container from '../../../components/Container';
-import EPLogo from '../../../assets/images/departments/ep_logo.jpg'
+import MPLogo from '../../../assets/images/departments/mp_logo.png'
 import Priston from '../../../assets/images/departments/Priston.jpg'
 import { HiAcademicCap, HiCog } from 'react-icons/hi';
 import ResearchBanner from '../../../assets/images/departments/mp_research_banner.jpg'
@@ -25,7 +25,7 @@ const MechnicalDepartment = () => {
         <Container>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center md:justify-start">
                 <div className="col-span-1">
-                    <img className='w-[90%]' src={EPLogo} alt="" />
+                    <img className='w-[90%]' src={MPLogo} alt="" />
                 </div>
 
                 <div className="col-span-1 md:col-span-2">
@@ -43,13 +43,13 @@ const MechnicalDepartment = () => {
                             </div>
                             <h4>Bachelor of Engineering (Mechanical)</h4>
                         </div>
-                        <div className="col-span-1 border border-green-500 shadow-lg p-3 rounded-xl bg-slate-100">
+                        {/* <div className="col-span-1 border border-green-500 shadow-lg p-3 rounded-xl bg-slate-100">
                             <div className="flex items-center gap-2">
                                 <HiAcademicCap size={30} />
                                 <h2 className='text-lg font-bold'>ME (Mechanical)</h2>
                             </div>
                             <h4>Master of Engineering (Mechanical)</h4>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

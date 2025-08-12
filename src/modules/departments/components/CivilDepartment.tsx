@@ -43,13 +43,13 @@ const CivilDepartment = () => {
                             </div>
                             <h4>Bachelor of Engineering (Civil)</h4>
                         </div>
-                        <div className="col-span-1 border border-green-500 shadow-lg p-3 rounded-xl bg-slate-100">
+                        {/* <div className="col-span-1 border border-green-500 shadow-lg p-3 rounded-xl bg-slate-100">
                             <div className="flex items-center gap-2">
                                 <HiAcademicCap size={30} />
                                 <h2 className='text-lg font-bold'>ME (Civil)</h2>
                             </div>
                             <h4>Master of Engineering (Civil)</h4>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
