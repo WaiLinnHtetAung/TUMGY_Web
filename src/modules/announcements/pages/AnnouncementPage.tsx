@@ -32,7 +32,15 @@ const AnnouncementPage = () => {
                 {(data && data.length > 0) && data.map((announcement: any) => (
                     <AnnCard key={announcement.id} announcement={announcement} />
                 ))}
+
+                
             </div>
+
+            {(data && data.length === 0) && (
+                <div className="flex items-center justify-center">
+                    <h3 className="text-rose-600 font-semibold text-2xl text-center">No announcements found</h3>
+                </div>
+            )}
         </Container>
     </>
   )

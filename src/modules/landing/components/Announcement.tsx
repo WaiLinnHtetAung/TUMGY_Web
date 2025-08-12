@@ -27,6 +27,11 @@ const Announcement: React.FC<announcementTypes> = ({ announcements, error, isLoa
                 <AnnCard key={announcement.id} announcement={announcement} />
             ))}
         </div>
+        {(announcements && announcements.length === 0) && (
+            <div className="flex items-center justify-center">
+                <h3 className="text-rose-600 font-semibold text-lg text-center">No announcements found</h3>
+            </div>
+        )}
     </Container>
   )
 }

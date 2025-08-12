@@ -38,6 +38,12 @@ const NewEventPage = () => {
                     <NewsCard key={news.id} news_event={news} />
                 ))}
             </div>
+
+            {(data && data.length === 0) && (
+                <div className="col-span-1 flex items-center justify-center">
+                    <h3 className="text-rose-600 font-semibold text-2xl">No news found</h3>
+                </div>
+            )}
         </Container>
     </>
   )

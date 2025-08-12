@@ -43,6 +43,12 @@ const NewEvent: React.FC<newsEventsTypes> = ({ news_events, error, isLoading }) 
                 </div>
             ))}
         </div>
+
+        { !isLoading && news_events.length === 0 && (
+            <div className="flex items-center justify-center">
+                <h3 className="text-rose-600 font-semibold text-lg">No news or events found</h3>
+            </div>
+        )}
     </Container>
   )
 }

@@ -37,6 +37,12 @@ const ActivityPage = () => {
                     <ActivityCard key={activity.id} activity={activity} />
                 ))}
             </div>
+
+            {(data && data.length === 0) && (
+                <div className="col-span-1 flex items-center justify-center">
+                    <h3 className="text-rose-600 font-semibold text-2xl">No activities found</h3>
+                </div>
+            )}
         </Container>
     </>
   )
