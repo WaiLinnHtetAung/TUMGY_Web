@@ -153,9 +153,17 @@ const ThesisPage = () => {
               {showModal && selectedThesis && (
                     <Modal thesis={selectedThesis} setShowModal={setShowModal} />
                 )}
-
             </div>
+
           </>
+        )}
+
+        {data?.thesis?.length ==0 && (
+          <div className="flex justify-center items-center h-[300px]">
+            <p className="text-2xl font-semibold text-rose-500">
+              No Thesis Found
+            </p>
+          </div>
         )}
       </Container>
     </>

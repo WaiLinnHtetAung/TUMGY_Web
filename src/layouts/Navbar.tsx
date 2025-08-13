@@ -79,7 +79,13 @@ const Navbar = () => {
                   <HiMiniBars3 size={33} />
                 </div>
 
-                <Drawer isOpen={isDrawerOpen} onClose={handleDrawerToggle} activeRoute={activeRoute} />
+                <Drawer 
+                  isOpen={isDrawerOpen} 
+                  onClose={handleDrawerToggle} 
+                  activeRoute={activeRoute} 
+                  sub_route_name={activeRoute.split('/')[2]}
+                  departments={departments}
+                />
             </div>
         </Container>
       </nav>
