@@ -21,7 +21,7 @@ const NewEvent: React.FC<newsEventsTypes> = ({ news_events, error, isLoading }) 
             <SectionLoading />
         ) }
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {(news_events && news_events.length > 0) && news_events.map((news_event: any) => (
+            {(!isLoading && news_events && news_events.length > 0) && news_events.map((news_event: any) => (
                 <div key={news_event.id} className="col-span-1 border-b pb-5 flex gap-5 items-center w-full">
                     <img className=" w-[30%] h-32 object-cover rounded-lg" src={news_event.image} alt="" />
                     <div className="w-[70%] flex flex-col gap-3 pe-3 lg:pe-10">
@@ -44,7 +44,7 @@ const NewEvent: React.FC<newsEventsTypes> = ({ news_events, error, isLoading }) 
             ))}
         </div>
 
-        { !isLoading && news_events.length === 0 && (
+        { !isLoading && news_events && news_events.length === 0 && (
             <div className="flex items-center justify-center">
                 <h3 className="text-rose-600 font-semibold text-lg">No news or events found</h3>
             </div>
